@@ -50,7 +50,6 @@ class ArticlesController < ApplicationController
   private
 
   def initialize_service
-    article = Article.new(params[:article])
     @article_service = ArticleService.new(self)
   end
 end
