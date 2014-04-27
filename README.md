@@ -4,7 +4,7 @@ This is a blog application with Neo4j as database backend. I tried use controlle
 and services as an actor of it. From services are called controller through callbacks. I use rails 3.2, because native
 neo4j gem is not stable for rails 4.
 
-## Instalation
+## Installation
 
 You must have installed jruby.
 
