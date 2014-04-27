@@ -8,6 +8,7 @@ capybara-*.html
 /tmp
 /db/*.sqlite3
 /db/neo4j*
+/db/neo4j*/**
 /public/system
 /coverage/
 /spec/tmp
@@ -15,6 +16,7 @@ capybara-*.html
 rerun.txt
 pickle-email-*.html
 /public/assets
+*.war
 
 # TODO Comment out these rules if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
