@@ -1,0 +1,6 @@
+<% comments.each do |comment| %>
+  <h4><%= comment.author %>:</h4>
+  <p>
+    <%= simple_format(comment.text_content) %>
+  </p>
+<% end %>

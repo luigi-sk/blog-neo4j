@@ -1,0 +1,9 @@
+
+
+<div class="articles-list">
+  <% @articles.each do |article| %>
+    <h2><%= link_to(article.title, article_path(article)) %></h2>
+    <p><%= article.text_content[0,250] %><%= " ..." if article.text_content.to_s.size > 250 %></p>
+    <hr />
+  <% end %>
+</div>

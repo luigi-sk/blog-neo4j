@@ -1,0 +1,21 @@
+
+
+<div class="articles article-show">
+  <h2>
+    <%= @article.title %>
+  </h2>
+
+  <div>
+    <%= link_to('All articles',articles_path()) %> / <%= link_to(@article.title, article_path()) %>
+  </div>
+
+  <p>
+    <%= simple_format(@article.text_content) %>
+  </p>
+
+  <hr />
+  <div class="comments">
+    <h3>Comments</h3>
+    <%= render partial: 'comments/list_with_form', locals: { comments: @article.comments } %>
+  </div>
+</div>
