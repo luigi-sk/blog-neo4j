@@ -14,7 +14,7 @@ class CommentsController < ApplicationController
     Rails.logger.info("Comment was created")
     @comments = [comment]
     respond_to do |format|
-      format.html { redirect_to article_path(@article) }
+      format.html { redirect_to article_path(@article.id) }
       format.js
     end
   end
